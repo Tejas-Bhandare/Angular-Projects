@@ -1,0 +1,11 @@
+<div>
+  <h2>Enter the number1</h2>
+  <input type="number" [(ngModel)] = "No1">
+  <h2>Enter the number2</h2>
+  <input type="number" [(ngModel)] = "No2">
+</div>
+
+
+<h2>Addition of {{No1}} and {{No2}} is :{{No1 | myAdd :No2}}</h2>
+<h2>Multiplication of {{No1}} and {{No2}} is :{{No1 | myMult :No2}}</h2>
+<router-outlet></router-outlet>
