@@ -1,0 +1,8 @@
+<div>
+  <h1>App Component</h1>
+  <h1>Data from Child: {{ receivedData }}</h1>
+<app-child (sendData)="receiveEvent($event)"></app-child>
+</div>
+
+
+<router-outlet></router-outlet>

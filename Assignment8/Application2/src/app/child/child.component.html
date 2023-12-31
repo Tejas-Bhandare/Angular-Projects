@@ -1,0 +1,8 @@
+<h1>Inside child component : Child</h1>
+<div style="text-align: center;">
+    <h3>Message from parent to child : {{receiveMessage}}</h3>
+    <h3>Send message to parent</h3>
+    <input type="text" [(ngModel)]="childMessage">
+    <button (click)="sendMessage()">Send message</button>
+</div>
+

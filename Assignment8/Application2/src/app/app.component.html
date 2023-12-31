@@ -1,0 +1,7 @@
+<h1>Inside app Component: App</h1>
+<div style="text-align: center;">
+    <h3> Message from Child to parent : {{receiveMessage}} </h3>
+</div>
+
+<app-child [receiveMessage] ="Message" (sender)="receiveMessage = $event "></app-child>
+<router-outlet></router-outlet>
